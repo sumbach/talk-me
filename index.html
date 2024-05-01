@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="media/foo.css"/>
+  </head>
+  <body>
+    <svg class="full-bleed" viewBox="0 0 1600 900">
+      <defs>
+        <g id="record-button">
+          <rect width="110" height="40" fill="black" rx="10" ry="10"/>
+          <circle cx="15" cy="20" r="6" fill="red"/>
+          <text x="30" y="25">RECORD</text>
+        </g>
+        <g id="record-all-button">
+          <rect width="145" height="40" fill="black" rx="10" ry="10"/>
+          <circle cx="15" cy="20" r="6" fill="red"/>
+          <text x="30" y="25">RECORD ALL</text>
+        </g>
+      </defs>
+      <g id="top" font-family="Arial" font-weight="600" fill="white">
+        <g transform="translate(200,0)">
+          <rect width="1200" height="900" fill="blue"/>
+          <g id="logo" style="visibility: hidden;">
+            <image href="media/pngfind.com-smartwool-logo-png-4055447.png" width="800" height="210" x="200" y="280"/>
+          </g>
+          <g id="nfl">
+            <text x="100" y="110" font-size="60" letter-spacing="8">NFL</text><use x="800" y="70" href="#record-all-button"/>
+            <image href="media/nfl.jpg" width="450" height="450" x="100" y="150"/>
+            <text x="100" y="680" font-size="36">[NBC] SUN 9/18 1:00 PM</text><use x="800" y="645" href="#record-button"/>
+            <text x="100" y="730" font-size="36">[CBS] SUN 9/18 1:00 PM</text><use x="800" y="695" href="#record-button"/>
+            <text x="100" y="780" font-size="36">[NBC] SUN 9/18 4:00 PM</text><use x="800" y="745" href="#record-button"/>
+            <text x="100" y="830" font-size="36">[CBS] SUN 9/18 4:00 PM</text><use x="800" y="795" href="#record-button"/>
+          </g>
+          <!-- title text -->
+          <!-- large image -->
+        </g>
+      </g>
+    </svg>
+  </body>
+</html>
