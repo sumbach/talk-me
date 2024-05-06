@@ -12,3 +12,26 @@ body {
     bottom: 0;
     background: green;
 }
+
+svg * {
+  /*transform-box: fill-box;*/
+}
+
+.fragment.btn-click {
+}
+
+.fragment.btn-click.visible {
+    animation: .5s click;
+}
+
+@keyframes click {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+};

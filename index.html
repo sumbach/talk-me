@@ -1,19 +1,54 @@
+<!doctype html>
 <html>
-  <head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>TODO</title>
+		<link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+<link rel="stylesheet" href="node_modules/reveal.js/dist/theme/white.css" id="theme">
+		<!-- Theme used for syntax highlighted code -->
+<link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/zenburn.css" id="highlight-theme"></head>
     <link rel="stylesheet" href="media/foo.css"/>
-  </head>
-  <body>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+<section data-markdown  ><textarea data-template>
+[comment]: # (This presentation was made with markdown-slides)
+[comment]: # (This is a CommonMark compliant comment. It will not be included in the presentation.)
+[comment]: # (Compile this presentation with the command below)
+[comment]: # (mdslides presentation.md --include media)
+
+[comment]: # (Set the theme:)
+[comment]: # (The list of themes is at https://revealjs.com/themes/)
+[comment]: # (The list of code themes is at https://highlightjs.org/)
+
+[comment]: # "You can also use quotes instead of parenthesis"
+[comment]: # 'Single quotes work too'
+
+[comment]: # (Pass optional settings to reveal.js:)
+[comment]: # (markdown: { smartypants: true })
+[comment]: # (Other settings are documented at https://revealjs.com/config/)
+
+John Doe | College University | July 3, 2020
+
+# Great Title
+
+[comment]: # (A comment starting with three or more !!! marks a slide break.)
+</textarea></section>
+<section>
     <svg class="full-bleed" viewBox="0 0 1600 900">
       <defs>
         <g id="record-button">
-          <rect width="110" height="40" fill="black" rx="10" ry="10"/>
+          <rect width="130" height="40" fill="black" rx="10" ry="10"/>
           <circle cx="15" cy="20" r="6" fill="red"/>
-          <text x="30" y="25">RECORD</text>
+          <text x="30" y="26" font-size="20">RECORD</text>
         </g>
-        <g id="record-all-button">
-          <rect width="145" height="40" fill="black" rx="10" ry="10"/>
-          <circle cx="15" cy="20" r="6" fill="red"/>
-          <text x="30" y="25">RECORD ALL</text>
+        <g id="record-all-button" class="fragment custom btn-click">
+          <rect width="170" height="40" fill="black" rx="10" ry="10" x="-72.5" y="-20"/>
+          <circle cx="-57.5" cy="0" r="6" fill="red"/>
+          <text x="-42.5" y="6" font-size="20">RECORD ALL</text>
         </g>
       </defs>
       <g id="top" font-family="Arial" font-weight="600" fill="white">
@@ -23,17 +58,44 @@
             <image href="media/pngfind.com-smartwool-logo-png-4055447.png" width="800" height="210" x="200" y="280"/>
           </g>
           <g id="nfl">
-            <text x="100" y="110" font-size="60" letter-spacing="8">NFL</text><use x="800" y="70" href="#record-all-button"/>
+            <text x="100" y="110" font-size="60" letter-spacing="8">NFL</text><use class="xfragment custom btn-click" x="872.5" y="90" href="#record-all-button"/>
             <image href="media/nfl.jpg" width="450" height="450" x="100" y="150"/>
+            <text x="600" y="175" font-size="24"><tspan>[TV/G] National Football League 2005-06 </tspan><tspan dy="35" x="600">Season and Super Bowl XXXIX</tspan></text>
             <text x="100" y="680" font-size="36">[NBC] SUN 9/18 1:00 PM</text><use x="800" y="645" href="#record-button"/>
             <text x="100" y="730" font-size="36">[CBS] SUN 9/18 1:00 PM</text><use x="800" y="695" href="#record-button"/>
-            <text x="100" y="780" font-size="36">[NBC] SUN 9/18 4:00 PM</text><use x="800" y="745" href="#record-button"/>
-            <text x="100" y="830" font-size="36">[CBS] SUN 9/18 4:00 PM</text><use x="800" y="795" href="#record-button"/>
+            <text x="100" y="780" font-size="36">[NBC] SUN 9/18 4:05 PM</text><use x="800" y="745" href="#record-button"/>
+            <text x="100" y="830" font-size="36">[CBS] SUN 9/18 4:05 PM</text><use x="800" y="795" href="#record-button"/>
           </g>
-          <!-- title text -->
-          <!-- large image -->
         </g>
       </g>
     </svg>
+    </section>
+			</div>
+		</div>
+
+		<script src="node_modules/reveal.js/dist/reveal.js"></script>
+		<script src="node_modules/reveal.js/plugin/notes/notes.js"></script>
+		<script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+		<script src="node_modules/reveal.js/plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+Reveal.initialize({
+controls : false,
+markdown : {smartypants: true},
+controls : true,
+keyboard : true,
+hash : false,
+respondToHashChanges : false,
+				hash: true,
+disableLayout: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+			});
+		</script>
+	</body>
+</html>
   </body>
 </html>
