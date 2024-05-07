@@ -8,36 +8,8 @@ section {
     position: relative;
 }
 
-.underlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.letterbox-wrapper {
-    position: relative;
-    width: min(100vw,133vh);
-    padding-bottom: 75%;
-    margin: auto;
-}
-
-.letterbox {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-}
-
 .bg-black {
     background: black;
-}
-
-.bg-blue {
-/*    background: rgba(0,0,255,0.3);*/
-    background: rgba(0,0,255,1.0);
 }
 
 .full-bleed {
@@ -46,12 +18,6 @@ section {
     top: 0;
     right: 0;
     bottom: 0;
-}
-
-video {
-    object-fit: fill;
-    width: 100%;
-    height: 100%;
 }
 
 svg * {
