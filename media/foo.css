@@ -75,4 +75,21 @@ svg * {
     100% {
         transform: scale(1);
     }
-};
+}
+
+.reveal h1 {
+    font-size: 200px;
+}
+
+.reveal h2 {
+    font-size: 140px;
+}
+
+section[data-background-color=white] {
+    color: black;
+}
+
+.reveal ol li {
+    font-size: 180%;
+    margin-bottom: 80px;
+}
