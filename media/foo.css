@@ -31,6 +31,17 @@ svg * {
     animation: .5s click;
 }
 
+.fragment.btn-click.visible circle {
+    fill: #ff0000 !important;
+    stroke-width: 0.8;
+    stroke: white;
+}
+
+.fragment.btn-click.visible rect {
+    stroke-width: 0.8;
+    stroke: white;
+}
+
 @keyframes click {
     0% {
         transform: scale(1);
