@@ -62,7 +62,7 @@ svg * {
     font-size: 140px;
 }
 
-section[data-background-color=white] {
+section[data-background-color="white"] {
     color: black;
 }
 
