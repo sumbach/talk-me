@@ -70,3 +70,21 @@ section[data-background-color="white"] {
     font-size: 180%;
     margin-bottom: 80px;
 }
+
+/* source: https://stackoverflow.com/a/76295246 */
+/* Select only the first fragment and undo the hiding styling RevealJS */
+/* applies by default */
+.reveal .slides section.auto-show-first-fragment[data-fragment="-1"] .fragment.current-visible:first-of-type:not(.current-fragment) {
+  /* (what you do in here depends on the fragment animations you have applied) */
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0);
+}
+
+/* Select the first child only if any subsequent child has the */
+/* .current-fragment class (i.e. when the 1st fragment is not the */
+/* currently selected one) */
+.reveal .slides section.auto-show-first-fragment .fragment.current-visible:first-of-type:not(.current-fragment) {
+  /* (what you do in here depends on the fragment animations you have applied) */
+  opacity: 0;
+}
