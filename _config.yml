@@ -1,2 +1,2 @@
 include:
-  - reveal.js/dist
+  - node_modules/reveal.js
